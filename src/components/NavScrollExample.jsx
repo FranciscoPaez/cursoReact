@@ -8,13 +8,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import CartWidget from './CartWidget/CartWidget';
+import {Link} from 'react-router-dom'
 
 
 function NavScrollExample() {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
+        <Link to='/'>
         <Navbar.Brand href="#">PzGaming</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
